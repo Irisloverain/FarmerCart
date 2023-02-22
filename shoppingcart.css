@@ -1,0 +1,139 @@
+ /* 字體 */
+ @font-face {
+   font-family: GenSenRoundedTW-B;
+   src: url('/font/GenSenRounded-B.otf')
+ }
+
+@font-face {
+      font-family: GenSenRoundedTW-L;
+      src: url('/font/GenSenRounded-L.otf')
+    }
+
+@font-face {
+   font-family: GenSenRoundedTW-L;
+   src: url('/font/GenSenRounded-M.otf')
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-L;
+  src: url('/font/GenSenRounded-R.otf')
+}
+
+
+/* from  main */
+div{
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+
+}
+.rounded-20{
+border-radius: 20px;
+}
+
+.rounded-20-tl-tr {
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.shadow-1{
+  box-shadow: 1px 1px 3px 1px #D5BAA6;
+}
+
+.backgound-w {
+  background-color: white;
+}
+
+.font-Brown{
+  color: rgba(168, 134, 134, 1);
+}
+
+.font-LightGreen {
+  color: rgba(87, 172, 111, 1);
+}
+
+
+
+
+/* for shopping cart */
+
+body {
+  font-family: GenSenRoundedTW-B;
+  background-color: #FFFDF6;
+}
+
+p {
+  margin-top: 0;
+}
+.img-size-80 {
+  width: 80px;
+  height: 80px;
+}
+
+.item-underline {
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid rgba(253, 244, 220, 1);
+  border-radius: 10px;
+}
+
+.less{
+ background: url("./Icon/less.svg");
+ border: 0;
+ width: 30px;
+ height: 30px;
+}
+
+.more {
+  background: url("./Icon/more.svg");
+  border: 0;
+  width: 30px;
+  height: 30px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  border: 0;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: rgba(255, 253, 246, 1);
+}
+
+input:focus {
+  outline: none !important;
+}
+
+.counternum{
+  width: 54px;
+  height: 30px;
+}
+.Cart{
+position: relative;
+margin-top: 100px;
+}
+.Cart::before{
+  content:'小農商品（3）';
+  background: url('./button/cart-cate.svg');
+  width: 229px;
+  height: 65px;
+  z-index: -1;
+  position: absolute;
+  top: -50px;
+  left: 30px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.Summary{
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+  z-index: 10;
+}

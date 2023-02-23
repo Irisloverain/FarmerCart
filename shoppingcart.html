@@ -21,18 +21,31 @@
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-10">
 
-          <div class="d-flex justify-content-between align-items-center mb-4">
-            <h3 class="fw-normal mb-0 font-LightGreen">小農購物車</h3>
-            <div>
-              <p class="mb-0"><span class="text-muted">Sort by:</span> <a href="#!" class="text-body">price <i
-                    class="fas fa-angle-down mt-1"></i></a></p>
+          <div class="row d-flex justify-content-between align-items-center mb-4">
+            <h3 class="col-md-12  col-lg-4 fw-normal mb-0 font-LightGreen">小農購物車</h3>
+            <div class="col-md-12 col-lg-8 d-flex align-items-center flex-row gap-2">
+
+              <div class="step">
+                <button class="circle">01</button><span>放入購物車</span>
+              </div>
+              <div class="dash"></div>
+              <div class="step">
+                <button class="circle">02</button><span>填寫資料</span>
+              </div>
+              <div class="dash"></div>
+              <div class="step">
+                <button class="circle">03</button><span>完成訂單</span>
+              </div>
+
+              <!-- <p class="mb-0"><span class="text-muted">Sort by:</span> <a href="#!" class="text-body">price <i
+                    class="fas fa-angle-down mt-1"></i></a></p> -->
             </div>
           </div>
           <div class="Cart backgound-w rounded-20 mb-4 shadow-1">
-            <div class="p-4">
+            <div class="C-title p-4">
               <div class="row d-flex align-items-center">
                 <div class="col-md-2 col-lg-2 col-xl-2">產品名稱</div>
-                <div class="col-md-2 col-lg-2 col-xl-2 offset-lg-4">單件價格</div>
+                <div class="col-md-2 col-lg-2 col-xl-2 offset-lg-4 offset-xl-4 offset-md-4">單件價格</div>
                 <div class="col-md-2 col-lg-2 col-xl-2">數量</div>
                 <div class="col-md-2 col-lg-2 col-xl-2">小計</div>
                 <div class="item-underline"></div>
@@ -40,15 +53,15 @@
             </div>
             <div class="p-4">
               <div class="row d-flex align-items-center">
-                <div class="col-md-2 col-lg-2 col-xl-2">
+                <div class="col-md-2 col-lg-2 col-xl-2 col-sm-4">
                   <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
                     class="img-fluid rounded-20" alt="Cotton T-shirt">
                 </div>
-                <div class="col-md-3 col-lg-3 col-xl-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 col-sm-6">
                   <p class="lead fw-normal mb-2 font-Brown">Basic T-shirt</p>
                   <p><span class="text-muted">Size: </span>M <span class="text-muted">Color: </span>Grey</p>
                 </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 offset-lg-1 offset-md-0">
+                <div class="C-price col-md-2 col-lg-2 col-xl-2 col-ms-2 offset-lg-1 offset-xl-1 offset-md-0">
                   <span class="mb-0">499.00</span><span>NTD</span>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 d-flex">
@@ -63,10 +76,10 @@
                     <i class="fas fa-plus"></i>
                   </button>
                 </div>
-                <div class="col-md-1 col-lg-1 col-xl-1">
+                <div class="C-price col-md-2 col-lg-1 col-xl-1">
                   <span class="mb-0">499.00</span><span>NTD</span>
                 </div>
-                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                <div class="C-delete col-md-1 col-lg-1 col-xl-1 text-end col-sm-12">
                   <img src="./Icon/delete.svg">
                 </div>
               </div>
@@ -76,9 +89,11 @@
         </div>
       </div>
     </div>
+  </section>
+  <section>
     <div class="Summary backgound-w rounded-20-tl-tr shadow-1 p-5">
       <div class="container h-100 d-flex justify-content-end">
-        <div class="flex-row d-flex me-5 gap-5">
+        <div class="flex-row d-flex me-5 gap-5 align-items-center">
           <div>
             <img src="./Icon/coupon.svg"><span>套用折扣: 生日優惠(-80元)</span>
           </div>

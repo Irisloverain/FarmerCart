@@ -21,13 +21,6 @@
 
 
 /* from  main */
-div{
-  margin: 0;
-  padding: 0;
-  width: auto;
-  height: auto;
-
-}
 .rounded-20{
 border-radius: 20px;
 }
@@ -137,3 +130,46 @@ margin-top: 100px;
   bottom: 0%;
   z-index: 10;
 }
+.step{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.circle{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: url('./button/circle.svg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+.circle:active{
+  width: 65px;
+  height: 65px;
+  background: url('./button/circle-a.svg');
+  transition: ease;
+}
+.dash{
+  background: url(./button/dash.svg);
+  width: 40.5px;
+  height: 1.5px;
+}
+
+@media(max-width:768px) {
+  .C-title {
+    display: none;
+  }
+  .C-delete {
+    position: absolute;
+    top: 15px;
+    right: 7px;
+    }
+  .C-price{
+    display: flex;
+    justify-content:flex-end
+    }
+}
+

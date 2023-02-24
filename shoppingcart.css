@@ -4,20 +4,21 @@
    src: url('/font/GenSenRounded-B.otf')
  }
 
-@font-face {
-      font-family: GenSenRoundedTW-L;
-      src: url('/font/GenSenRounded-L.otf')
-    }
 
 @font-face {
-   font-family: GenSenRoundedTW-L;
+   font-family: GenSenRoundedTW-M;
    src: url('/font/GenSenRounded-M.otf')
 }
 
 @font-face {
-  font-family: GenSenRoundedTW-L;
+  font-family: GenSenRoundedTW-R;
   src: url('/font/GenSenRounded-R.otf')
 }
+
+@font-face {
+      font-family: GenSenRoundedTW-L;
+      src: url('/font/GenSenRounded-L.otf')
+    }
 
 
 /* from  main */
@@ -36,6 +37,9 @@ border-top-right-radius: 20px;
 
 .backgound-w {
   background-color: white;
+}
+.backgound-y{
+  background-color: rgba(252, 245, 221, 1);
 }
 
 .font-Brown{
@@ -96,15 +100,15 @@ input {
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: hidden;
-  background-color: rgba(255, 253, 246, 1);
 }
 
 input:focus {
   outline: none !important;
 }
 
-.counternum{
-  width: 54px;
+.C-counternum{
+  background-color: rgba(255, 253, 246, 1);
+  width: 35%;
   height: 30px;
 }
 .Cart{
@@ -130,7 +134,7 @@ margin-top: 100px;
   bottom: 0%;
   z-index: 10;
 }
-.step{
+.C-step{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,6 +162,28 @@ margin-top: 100px;
   height: 1.5px;
 }
 
+/* pay */
+
+.C-input{
+  width: 100%;
+  height: 40px;
+  background-color: #FFFDF6;
+}
+
+.C-collapse{
+  border: 0;
+  width: 30px;
+  height: 20px;
+  padding: 0;
+  background: url(./button/collapse.svg);
+  background-repeat: no-repeat;
+
+}
+.C-payItem-img{
+  width: 60px;
+  height: 60px;
+}
+
 @media(max-width:768px) {
   .C-title {
     display: none;
@@ -169,7 +195,20 @@ margin-top: 100px;
     }
   .C-price{
     display: flex;
-    justify-content:flex-end
+    justify-content:flex-end;
+    padding-top: 20px;
     }
+.C-price-1{
+      display: none;
+      }
+
+.C-counter{
+  padding-top: 20px;
 }
+
+.C-step{
+flex-direction: column;
+}
+}
+
 

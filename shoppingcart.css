@@ -34,6 +34,10 @@
 .f-24{
   font-size: clamp(1.2rem, 2.5vw, 1.5rem); 
 }
+.f-32{
+  font-size: clamp(1.8rem, 3vw, 2rem); 
+
+}
 
 
 .f-Brown{
@@ -51,6 +55,12 @@
 }
 .sp-1{
   letter-spacing: 2px;
+}
+.sp-2{
+  letter-spacing: 4px;
+}
+.sp-3{
+  letter-spacing: 6px;
 }
 .rounded-20{
 border-radius: 20px;
@@ -256,12 +266,18 @@ text-align: center;
   justify-content: center;
   align-items: center;
   border: 0;
+  font-size: clamp(0.9rem, 1.8vw, 1rem); 
+  color: #7A7A7A;
+
 }
 .C-circle:active{
   width: 65px;
   height: 65px;
   background: url('./button/circle-a.svg');
   transition: ease;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem); 
+  color: rgb(116, 84, 84);
+
 }
 
 .C-active{
@@ -269,6 +285,8 @@ text-align: center;
   height: 65px;
   background: url('./button/circle-a.svg');
   transition: ease;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem); 
+  color: rgb(116, 84, 84);
 }
 .C-dash{
   background: url(./button/dash.svg);

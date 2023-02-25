@@ -22,73 +22,174 @@
         <div class="col-10">
 
           <div class="row d-flex justify-content-between align-items-center mb-4">
-            <h3 class="col-lg-4 col-md-12 col-sm-12 col-12 fw-normal mb-0 font-LightGreen">小農購物車</h3>
+            <h3 class="col-lg-4 col-md-12 col-sm-12 col-12 fw-normal mb-3 font-LightGreen">小農購物車</h3>
 
-            <div class="col-lg-8 col-md-12 col-sm-12 col-12 d-flex justify-content-center align-items-center flex-row gap-2">
+            <div
+              class="col-lg-8 col-md-12 col-sm-12 col-12 d-flex justify-content-center align-items-center flex-row gap-2">
               <div class="C-step">
-                <button class="circle">01</button><span>放入購物車</span>
+                <button class="C-circle C-active">01</button><span>放入購物車</span>
               </div>
-              <div class="dash"></div>
+              <div class="C-dash"></div>
               <div class="C-step">
-                <button class="circle">02</button><span>填寫資料</span>
+                <button class="C-circle">02</button><span>填寫資料</span>
               </div>
-              <div class="dash"></div>
+              <div class="C-dash"></div>
               <div class="C-step">
-                <button class="circle">03</button><span>完成訂單</span>
+                <button class="C-circle">03</button><span>完成訂單</span>
               </div>
             </div>
           </div>
-          <div class="Cart backgound-w rounded-20 mb-4 shadow-1">
-            <div class="C-title p-4">
-              <div class="row d-flex align-items-center">
-                <div class="col-md-2 col-lg-2 col-xl-2">產品名稱</div>
-                <div class="col-md-2 col-lg-2 col-xl-2 offset-lg-4 offset-xl-4 offset-md-3">單件價格</div>
-                <div class="col-md-2 col-lg-2 col-xl-2">數量</div>
-                <div class="col-md-2 col-lg-2 col-xl-2">小計</div>
-                <div class="item-underline"></div>
+          <div class="C-Cart-p backgound-w rounded-20 mb-4 shadow-1 p-2 p-sm-3 p-lg-4">
+            <div class="C-title px-2 py-2 px-lg-4 pt-lg-4 ">
+              <div class="d-flex flex-row align-items-center justify-content-between">
+                <div class="C-title-1"><span class="f-16 f-Gray sp-1">產品名稱</span></div>
+                <div class="d-flex flex-row gap-1 gap-lg-5">
+                  <div class="C-title-2"><span class="f-16 f-Gray sp-1">單件價格</span></div>
+                  <div class="C-title-3"><span class="f-16 f-Gray sp-1">數量</span></div>
+                  <div class="C-title-4"><span class="f-16 f-Gray sp-1">小計</span></div>
+                  <div class="C-title-5"></div>
+                </div>
               </div>
+              <div class="C-underline"></div>
             </div>
-            <div class="p-4">
-              <div class="row d-flex align-items-center">
-                <div class="col-md-2 col-lg-2 col-xl-2 col-sm-4 col-4">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
-                    class="img-fluid rounded-20" alt="Cotton T-shirt">
+            <div class="C-Item px-3 py-3 px-lg-4 pt-lg-4">
+              <div class="d-flex flex-row align-items-center justify-content-between flex-wrap">
+                <div class="C-Item-1 d-flex flex-row align-items-center gap-lg-3 gap-1">
+                  <div class="C-productimg">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
+                      class="img-fluid rounded-20" alt="Cotton T-shirt">
+                  </div>
+                  <div>
+                    <p class="f-24 fw-normal mb-1 f-Brown">Basic T-shirt</p>
+                    <span class="f-13 sp-1 f-Gray">來自某某鄉新鮮盛產蘋果
+                  </div>
                 </div>
-                <div class="col-md-3 col-lg-3 col-xl-3 col-sm-8 col-6">
-                  <p class="lead fw-normal mb-2 font-Brown">Basic T-shirt</p>
-                  <p><span class="text-muted">來自某某鄉新鮮盛產蘋果</p>
-                </div>
-                <div class="C-price-1 col-md-2 col-lg-2 col-xl-2 col-sm-2 offset-lg-1 offset-xl-1 offset-md-0">
-                  <span class="mb-0">499.00</span><span>NTD</span>
-                </div>
-                <div class="C-counter col-md-2 col-lg-2 col-xl-2 col-sm-6 col-6 d-flex">
-                  <button class="less" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                    <i class="fas fa-minus"></i>
-                  </button>
+                <div class="C-Item-2 d-flex flex-row gap-1 gap-md-2 gap-lg-5 align-items-center">
+                  <div class="C-price-1">
+                    <span class="f-24 sp-1 f-Gray">499</span><span class="f-16 f-Gray">NTD</span>
+                  </div>
+                  <div class="C-counter d-flex">
+                    <button class="less" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                      <i class="fas fa-minus"></i>
+                    </button>
 
-                  <input name="quantity" value="2" type="number"
-                    class="C-counternum no-outline:focus" />
+                    <input name="quantity" value="2" type="number" class="C-counternum no-outline:focus" />
 
-                  <button class="more" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                    <i class="fas fa-plus"></i>
-                  </button>
-                </div>
-                <div class="C-price col-md-2 col-lg-1 col-xl-1 col-sm-6 col-6">
-                  <span class="mb-0">499.00</span><span>NTD</span>
-                </div>
-                <div class="C-delete col-md-1 col-lg-1 col-xl-1 text-end col-sm-12">
-                  <img src="./Icon/delete.svg">
+                    <button class="more" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div class="C-price">
+                    <span class="f-24 sp-1 f-DarkGreen">499</span><span class="f-Gray">NTD</span>
+                  </div>
+                  <div class="C-delete">
+                    <img src="./Icon/delete.svg" class="img-fluid">
+                  </div>
                 </div>
               </div>
-              <div class="item-underline"></div>
+              <div class="C-underline"></div>
+            </div>
+            <div class="C-Item px-3 py-3 px-lg-4 pt-lg-4">
+              <div class="d-flex flex-row align-items-center justify-content-between flex-wrap">
+                <div class="C-Item-1 d-flex flex-row align-items-center gap-lg-3 gap-1">
+                  <div class="C-productimg">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
+                      class="img-fluid rounded-20" alt="Cotton T-shirt">
+                  </div>
+                  <div>
+                    <p class="f-24 fw-normal mb-1 f-Brown">Basic T-shirt</p>
+                    <span class="f-13 sp-1 f-Gray">來自某某鄉新鮮盛產蘋果
+                  </div>
+                </div>
+                <div class="C-Item-2 d-flex flex-row gap-1 gap-md-2 gap-lg-5 align-items-center">
+                  <div class="C-price-1">
+                    <span class="f-24 sp-1 f-Gray">499</span><span class="f-16 f-Gray">NTD</span>
+                  </div>
+                  <div class="C-counter d-flex">
+                    <button class="less" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                      <i class="fas fa-minus"></i>
+                    </button>
+
+                    <input name="quantity" value="2" type="number" class="C-counternum no-outline:focus" />
+
+                    <button class="more" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div class="C-price">
+                    <span class="f-24 sp-1 f-DarkGreen">499</span><span class="f-Gray">NTD</span>
+                  </div>
+                  <div class="C-delete">
+                    <img src="./Icon/delete.svg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="C-underline"></div>
+            </div>
+          </div>
+
+          <div class="C-Cart-l backgound-w rounded-20 mb-4 shadow-1 p-2 p-sm-3 p-lg-4">
+            <div class="C-title px-2 py-2 px-lg-4 pt-lg-4 ">
+              <div class="d-flex flex-row align-items-center justify-content-between">
+                <div class="C-title-1"><span class="f-16 f-Gray sp-1">產品名稱</span></div>
+                <div class="C-title-group d-flex flex-row">
+                  <div class="C-title-2"><span class="f-16 f-Gray sp-1">單件價格</span></div>
+                  <div class="C-title-3"><span class="f-16 f-Gray sp-1">數量</span></div>
+                  <div class="C-title-4"><span class="f-16 f-Gray sp-1">小計</span></div>
+                  <div class="C-title-5"></div>
+                </div>
+              </div>
+              <div class="C-underline"></div>
+            </div>
+            <div class="C-Item px-3 py-3 px-lg-4 pt-lg-4">
+              <div class="d-flex flex-row align-items-center flex-wrap">
+                <div class="C-Item-l1 d-flex flex-row align-items-center gap-lg-3 gap-2">
+                  <div class="C-productimg">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
+                      class="img-fluid rounded-20" alt="Cotton T-shirt">
+                  </div>
+                  <div>
+                    <p class="f-20 fw-normal mb-1 f-Brown">Basic T-shirt</p>
+                    <span class="f-13 sp-1 f-Gray">課程
+                  </div>
+                  <div class="C-date d-flex flex-row gap-1 ms-auto">
+                    <img src="./Icon/calendar.svg">
+                    <div class="d-flex flex-column">
+                      <span class="f-16 f-Gray">03/16</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="C-Item-l2 d-flex flex-row align-items-center">
+                  <div class="C-price-1">
+                    <span class="f-20 sp-1 f-Gray">499</span><span class="f-16 f-Gray">NTD</span>
+                  </div>
+                  <div class="C-counter d-flex">
+                    <button class="less" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                      <i class="fas fa-minus"></i>
+                    </button>
+
+                    <input name="quantity" value="2" type="number" class="C-counternum no-outline:focus" />
+
+                    <button class="more" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div class="C-price">
+                    <span class="f-20 sp-1 f-DarkGreen">499</span><span class="f-Gray">NTD</span>
+                  </div>
+                  <div class="C-delete">
+                    <img src="./Icon/delete.svg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="C-underline"></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
-  <section>
-    <div class="Summary backgound-w rounded-20-tl-tr shadow-1 p-5">
+  <!-- <section>
+    <div class="C-Summary backgound-w rounded-20-tl-tr shadow-1 p-5">
       <div class="container h-100 d-flex justify-content-end">
         <div class="flex-row d-flex me-5 gap-5 align-items-center">
           <div>
@@ -96,11 +197,11 @@
           </div>
           <div><span>總金額</span><span>3640</span><span>NTD</span></div>
           <button type="button" class="btn btn-warning btn-block btn-lg">Proceed to Pay</button>
-          </div>
         </div>
       </div>
     </div>
-  </section>
+    </div>
+  </section> -->
 </body>
 
 </html>
